@@ -1,0 +1,12 @@
+app = "daoud-telegram-bot"
+primary_region = "cdg"
+
+[env]
+  BOT_TOKEN = ""
+
+[build]
+  image = "flyioregistry.azurecr.io/flyio/builder:latest"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8080
